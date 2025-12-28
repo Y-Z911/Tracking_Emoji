@@ -1,0 +1,33 @@
+<!--Elaborado por Justin Yak-->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mediapipe Hand Tracking — Simple</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Panel de opciones -->
+  <div style="position:fixed; top:20px; left:20px; background:#1e293b; padding:12px 16px; border-radius:12px; color:white; font-family:Inter; box-shadow:0 4px 20px rgba(0,0,0,0.4); z-index:10;">
+    <label style="display:flex; align-items:center; gap:6px; cursor:pointer;">
+      <input type="checkbox" id="toggleDraw" checked>
+      Mostrar manos
+    </label>
+  </div>
+
+  <!-- Contenedor principal -->
+  <div class="wrap">
+    <video class="input_video" playsinline></video>
+    <canvas class="output_canvas"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
